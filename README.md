@@ -1,5 +1,3 @@
-
-
 <h1>Estudos de BIOS</h1>
 
 <p>Este repositório é dedicado ao estudo, gravação e modificação de BIOS, com o objetivo de compartilhar experiências e conhecimentos relacionados à eletrônica envolvida, além de indicar softwares e procedimentos práticos. Abaixo estão alguns dos principais tópicos abordados:</p>
@@ -79,4 +77,33 @@
 
 <p>Esta tabela reflete a configuração de pinos conforme o data sheet, incluindo as tensões típicas e o funcionamento de cada pino para operação com um chip de 1,8 V da série 25.</p>
 
+<h2>Orientações para Gravação de BIOS</h2>
 
+<p>Gravar uma BIOS requer atenção ao modelo do chip e ao uso correto de ferramentas e softwares. Abaixo estão os passos gerais para realizar a gravação de uma BIOS:</p>
+
+<h3>Passos Gerais</h3>
+<ol>
+    <li><strong>Identifique o chip de BIOS:</strong> Use ferramentas como <code>flashrom</code> ou examine fisicamente a placa para encontrar o modelo do chip.</li>
+    <li><strong>Faça um backup do firmware atual:</strong> Antes de gravar, leia e salve o firmware atual com o comando:
+        <pre><code>sudo flashrom -p internal -r backup_bios.bin</code></pre>
+        Isso criará um arquivo chamado <code>backup_bios.bin</code> com o conteúdo da BIOS.
+    </li>
+    <li><strong>Prepare o novo firmware:</strong> Verifique se o arquivo da nova BIOS é compatível com seu chip e placa-mãe.</li>
+    <li><strong>Grave o firmware:</strong> Para gravar o novo firmware, use:
+        <pre><code>sudo flashrom -p internal -w novo_firmware.bin</code></pre>
+        Substitua <code>novo_firmware.bin</code> pelo nome do arquivo que contém o firmware que você deseja gravar.
+    </li>
+    <li><strong>Verifique a gravação:</strong> Após gravar, valide a operação com:
+        <pre><code>sudo flashrom -p internal -v novo_firmware.bin</code></pre>
+        Isso verifica se o firmware foi gravado corretamente.
+    </li>
+</ol>
+
+<h3>Ferramentas Recomendadas</h3>
+<ul>
+    <li><strong>Flashrom:</strong> Utilitário open-source para gravação e leitura de chips de BIOS.</li>
+    <li><strong>CH341A:</strong> Programador externo para gravação em chips desconectados da placa-mãe.</li>
+    <li><strong>Hex Editor:</strong> Ferramenta para análise e modificação do firmware em nível binário.</li>
+</ul>
+
+<p>Consulte a documentação do fabricante e teste cuidadosamente para evitar danos ao firmware do sistema.</p>
