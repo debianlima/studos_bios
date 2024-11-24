@@ -74,7 +74,7 @@ Este guia detalha as alterações realizadas na BIOS utilizando ferramentas espe
 - **Motivo**: Evitar ajustes automáticos que podem causar instabilidade.
 - **Impacto**: Garante estabilidade no barramento PCIe.
   
-  ![Desabilitar Hardware Speed e Width](amibcp_pci_hardware_speed.png)
+  ![Desabilitar Hardware Speed e Width](amibcp_pci_express_speed.png)
 
 ---
 
