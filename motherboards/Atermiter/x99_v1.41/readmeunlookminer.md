@@ -6,6 +6,9 @@ Este guia detalha as alterações realizadas na BIOS utilizando ferramentas espe
 
 ## Ferramentas Utilizadas
 - **S3TurboTool**: Ajustes de tensão, frequência e turbo boost.
+  
+ ![S3TurboTool](s3turbo.png).
+
 - **AMIBCP**: Modificações avançadas de configurações da BIOS.
 - **MMTool Aptio**: Remoção de patches de microcode e substituição de módulos.
 - **UEFITool**: Substituição de módulos específicos na BIOS.
