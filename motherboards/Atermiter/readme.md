@@ -1,6 +1,13 @@
+
 # Identificação de Informações da Placa-Mãe e Verificação de Compatibilidade de BIOS
 
 Este repositório fornece informações sobre como identificar detalhes da sua placa-mãe no Linux e compará-las com as especificações da BIOS disponível para garantir compatibilidade.
+
+A placa-mãe abordada neste repositório é o modelo **Atermiter X99 V1.41**, projetada para processadores da linha Intel Xeon e com suporte para a série de chipsets Intel 8 Series/C220. Abaixo está uma imagem ilustrativa da placa-mãe:
+
+![Placa-Mãe Atermiter X99 V1.41](https://github.com/debianlima/studos_bios/blob/main/motherboards/Atermiter/x99_v1.41/placa_mae_x99v1.41.png)
+
+---
 
 ## Como Identificar Informações da Placa-Mãe no Linux
 
@@ -14,7 +21,7 @@ Use o comando `dmidecode` para obter as informações da placa-mãe:
 sudo dmidecode -t baseboard
 ```
 
-Exemplo de saída:
+**Exemplo de saída:**
 
 ```sh
 Manufacturer: Intel
@@ -30,7 +37,7 @@ Use o comando `dmidecode` para verificar a versão e outras informações da BIO
 sudo dmidecode -t bios
 ```
 
-Exemplo de saída:
+**Exemplo de saída:**
 
 ```sh
 Vendor: American Megatrends Inc.
@@ -47,7 +54,7 @@ Use o comando `lspci` para listar o chipset da placa-mãe:
 lspci | grep -i chipset
 ```
 
-Exemplo de saída:
+**Exemplo de saída:**
 
 ```sh
 Intel 8 Series/C220 Series Chipset Family
@@ -61,7 +68,7 @@ Use o comando `lscpu` para verificar informações sobre o processador e a arqui
 lscpu
 ```
 
-Exemplo de saída:
+**Exemplo de saída:**
 
 ```sh
 Architecture: x86_64
@@ -80,19 +87,21 @@ Com as informações obtidas, compare:
 
 ### Exemplo de Comparação
 
-| Informações Identificadas         | BIOS no Repositório         |
-| --------------------------------- | --------------------------- |
-| Fabricante: Intel                 | Intel                       |
-| Modelo: X99H                      | X99H                        |
-| Versão da BIOS: 5.11              | 5.11                        |
-| Tamanho do ROM: 8 MB              | 8 MB                        |
-| Chipset: 8 Series/C220 Series     | 8 Series/C220 Series        |
+| Informações Identificadas     | BIOS no Repositório     |
+| ----------------------------- | ----------------------- |
+| Fabricante: Intel             | Intel                  |
+| Modelo: X99H                  | X99H                   |
+| Versão da BIOS: 5.11          | 5.11                   |
+| Tamanho do ROM: 8 MB          | 8 MB                   |
+| Chipset: 8 Series/C220 Series | 8 Series/C220 Series   |
 
 A BIOS fornecida neste repositório é **compatível** com a placa-mãe identificada.
 
 ### 6. Link para a BIOS Disponível
 
-A BIOS compatível está disponível no arquivo: [BIOS_5.11.ROM](./BIOS_5.11.ROM)
+A BIOS modificada com o desbloqueio do Turbo Boost (20x20) está disponível no seguinte link:
+
+[BIOS Modificada - Turbo Boost 20x20](https://github.com/debianlima/studos_bios/blob/main/motherboards/Atermiter/x99_v1.41/bios_x99_powerlost_20x20_turbo_hack.bin)
 
 ---
 
@@ -101,3 +110,4 @@ A BIOS compatível está disponível no arquivo: [BIOS_5.11.ROM](./BIOS_5.11.ROM
 - **Cuidado ao Atualizar a BIOS:** Atualizações de BIOS incorretas podem danificar permanentemente sua placa-mãe.
 - **Backup da BIOS Atual:** Sempre faça um backup antes de aplicar qualquer modificação.
 - Consulte a documentação do fabricante para instruções detalhadas.
+```
