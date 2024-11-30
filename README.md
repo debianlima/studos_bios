@@ -1,4 +1,15 @@
 
+📚 **Descrição da Playlist**  
+
+Explore nesta playlist do YouTube tutoriais detalhados sobre modificações, ajustes e gravações de BIOS para maximizar o desempenho de placas-mãe, especialmente para aplicações como mineração e uso avançado. A série acompanha as práticas recomendadas do repositório **Studos BIOS** no GitHub, explicando desde configurações iniciais até ajustes avançados via ferramentas como o S3 Turbo Tool e Flashrom.
+
+🔗 **Acesse a Playlist no YouTube:**  
+[Gravação de BIOS via SSH](https://www.youtube.com/embed/videoseries?si=PYtec5J6e1PF1A8t&amp;list=PLWtdOCrFeIoD1QzoUsaZPkX5H405ZAVho)
+
+
+🎥 **Canal LimaTI**  
+Inscreva-se no canal para mais tutoriais e conteúdos relacionados a BIOS, tecnologia e sistemas avançados! 🚀
+
 # Estudos de BIOS
 
 Este repositório é dedicado ao estudo, gravação e modificação de BIOS, com o objetivo de compartilhar experiências e conhecimentos relacionados à eletrônica envolvida, além de indicar softwares e procedimentos práticos. Abaixo estão alguns dos principais tópicos abordados:
