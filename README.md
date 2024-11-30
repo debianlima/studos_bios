@@ -97,3 +97,33 @@ Para obter informações detalhadas sobre como identificar e gravar a BIOS, cons
 
 ---
 ```
+```
+---
+
+## Informações sobre a GPU NVIDIA GTX 1060 5GB Dual
+
+A GPU abordada neste repositório é o modelo **NVIDIA GTX 1060 5GB Dual**, uma placa de vídeo baseada na arquitetura Pascal e projetada para alto desempenho em jogos e mineração. Abaixo estão os detalhes da GPU:
+
+| Especificação             | Detalhes                        |
+|---------------------------|----------------------------------|
+| Fabricante                | NVIDIA                          |
+| Modelo                    | GTX 1060 5GB Dual               |
+| ID do Fabricante          | 10de                            |
+| ID do Dispositivo         | 1c04                            |
+| Subsystem Manufacturer ID | 1043                            |
+| Subsystem Device ID       | 8638                            |
+| BIOS Compativel           | [Link para BIOS](https://www.techpowerup.com/vgabios/200289/200289) |
+
+
+---
+
+## Identificar e Obter a BIOS da GPU
+
+Para obter informações detalhadas sobre [como identificar e gravar a BIOS da GPU](https://github.com/debianlima/studos_bios/blob/main/GPUS/NVIDIA/GTX1060-5GB-DUAL/Readme.md).
+
+
+
+**Atenção:** Modificar a BIOS da GPU é um procedimento avançado que pode trazer riscos ao hardware. Certifique-se de seguir todos os passos cuidadosamente e mantenha um backup da BIOS original para restaurar em caso de problemas.
+
+---
+```
